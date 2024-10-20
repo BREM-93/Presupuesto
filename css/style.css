@@ -1,0 +1,138 @@
+/*Selector universal*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+/*Estilo para el titulo y la seleccion de la imagen de fondo*/
+.titulo {
+	padding-top: 40px;
+	height: 450px;
+	background-image: url(../img/fondo-pantalla-tecnologia.jpg);
+	text-align: center;
+	background-position: 100%;
+}
+
+.titulo h1 {
+	margin-bottom: 15px;
+	font-weight: bold;
+	color: #091c47;
+}
+
+.titulo label {
+	margin: 10px;
+	padding-top: 13px;
+	height: 50px;
+	background: #fff;
+	font-size: 15px;
+	font-weight: bold;
+	width: 220px;
+}
+
+/*Estilo para titulo INGRESOS*/
+.titulo .lab1 {
+	background: #091c47;
+	color: #fff;
+}
+
+/*Estilo para titulo EGRESOS*/
+.titulo .lab2 {
+	border: 2px solid;
+	border-color: #000000;
+	color: #091c47;
+}
+
+/*Estilo para titulo Porcentaje de gastos*/
+.titulo b {
+	padding: 10px;
+	background: #091c47;
+	color: #fff;
+	font-size: 15px;
+}
+
+/*Estilo donde se mostraran los ingresos y egresos*/
+.carta {
+	height: 25px;
+	margin-bottom: 25px;
+	display: inline-flex;
+	margin-left: 25px;
+	margin-right: 25px;
+	justify-content: space-between;
+}
+
+.titulo h4 {
+	color: #091c47;
+	font-weight: bold;
+}
+
+.card-body p {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.card-body b {
+	padding: 5px;
+	background: #091c47;
+	color: #fff;
+	font-size: 15px;
+}
+
+/*Altura del contenedor*/
+.container {
+	height: 550px;
+}
+
+.card-header h3 {
+	color: #091c47;
+}
+
+.btn_d {
+	width: 70%;
+	height: 40px;
+	border-style: none;
+	background: #000000;
+	color: #fff;
+}
+
+/*Pseudo clase para definir las variables de color*/
+:root {
+	--bg-inactive: #bdbdbd;
+	--bg-active: #091c47;
+}
+
+/*Estilo para configurar el contenedor flexbox de ingresos y egresos*/
+.options {
+	display: flex;
+	width: 100%;
+	list-style: none;
+}
+
+/*Estilo para ocupar todo el espacio disponible (flex-grow: 1).Para 
+configurar el fondo gris usamos la variable --bg-inactive*/
+.option {
+	flex-grow: 1;
+	text-align: center;
+	line-height: 60px;
+	background: var(--bg-inactive);
+	font-weight: bold;
+	color: #fff;
+	cursor: pointer;
+}
+
+/*Estilo que mostrara el fondo azul oscuro y un borde inferior*/
+.option-active {
+	background: var(--bg-active);
+	border-bottom: 1px solid rgba(7, 63, 95, 0.4);
+}
+
+.content {
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+.content-active {
+	display: block;
+}
+
